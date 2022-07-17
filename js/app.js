@@ -32,8 +32,20 @@ const rps = (p1, p2) => {
   if (p2 === "scissors" && p2 === "paper") return "you are won!!!";
   if (p1 === "paper" && p2 === "rock") return "you are won!!!";
 
-
- return " i won"
+  return " i won";
 };
 
-console.log(rps("paper" ,"rock"));
+console.log(rps("paper", "rock"));
+
+// next questions
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+console.log(countSheeps([1]));
+
+// repeat string 
+function repeatStr(numberS , stringN) {
+    return stringN.repeat(numberS)
+}
+console.log(repeatStr(2 , "repeat "));
