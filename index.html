@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>for interview</title>
-    <style>
-
-      .dcode {
-         width: 250px;
-         height: 100px;
-         background-color: crimson;
-      }
-    </style>
-
-
-    <link rel="stylesheet" href="./css/style.css">
-   
   </head>
   <body>
-
-
+    <h1><code>Array.from()</code></h1>
+    <ul class="summary">
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, molestias!
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, molestias!
+      </li>
+    </ul>
     <script src="/js/app.js"></script>
+
     <script>
-      const myElement = document.createElement("div");
+      // const name = "domenic";
+      // const strArr = Array.from(name, function (char) {
+      //   return char.toUpperCase();
+      // });
 
-      myElement.setAttribute("class", "dcode");
-
-      document.body.appendChild(myElement);
-      console.log(myElement);
+      const mySet = new Set();
+      mySet.add({ name: "dom" });
+      const setArr = Array.from(mySet);
+      
+      for (const value of mySet.values()) {
+        console.log(value);
+      }
+   
     </script>
   </body>
 </html>
