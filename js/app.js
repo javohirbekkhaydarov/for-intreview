@@ -44,9 +44,23 @@ function countSheeps(arrayOfSheeps) {
 }
 console.log(countSheeps([1]));
 
-// repeat string 
-function repeatStr(numberS , stringN) {
-    return stringN.repeat(numberS)
-} 
-console.log(repeatStr(2 , "repeat "));
+// repeat string
+function repeatStr(numberS, stringN) {
+  return stringN.repeat(numberS);
+}
+console.log(repeatStr(2, "repeat "));
 
+
+/*  
+ * What are the ways to create an array from digis ,
+ * 1,2 and 3 as strings in JavaScript?
+ 
+ ?Array.from('123') , ["1" , "2" , "3"] , new Array("1","2","3")
+*/
+
+console.log(Array.from("123"));
+console.log(Array.of("123"));
+console.log(["1", "2", "3"]);
+console.log(new Array(3));
+console.log(Array.of(3));
+console.log(new Array("1", "2", "3"));
