@@ -47,5 +47,6 @@ console.log(countSheeps([1]));
 // repeat string 
 function repeatStr(numberS , stringN) {
     return stringN.repeat(numberS)
-}
+} 
 console.log(repeatStr(2 , "repeat "));
+
