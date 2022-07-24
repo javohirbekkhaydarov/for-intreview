@@ -51,3 +51,22 @@ function repeatStr(numberS, stringN) {
 console.log(repeatStr(2, "repeat "));
 
 
+// showPrime(20)
+
+// function showPrime(limit) {
+//   for(let j = 2; j <= limit; j++) {
+//     if(isPrime(j)) {
+//       console.log(j);
+//     }
+//   }
+// }
+
+
+// function isPrime(number) {
+//   for(let i = 2; i < number; i++) {
+//     if(number % i === 0) {
+//       return false
+//     }
+//   }
+//   return true
+// } 
