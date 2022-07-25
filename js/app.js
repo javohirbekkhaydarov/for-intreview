@@ -69,3 +69,5 @@ const user = {
 }
 delete user.age
 console.log(user)
+
+
