@@ -50,7 +50,6 @@ function repeatStr(numberS, stringN) {
 }
 console.log(repeatStr(2, "repeat "));
 
-
 // showPrime(20)
 
 // function showPrime(limit) {
@@ -61,7 +60,6 @@ console.log(repeatStr(2, "repeat "));
 //   }
 // }
 
-
 // function isPrime(number) {
 //   for(let i = 2; i < number; i++) {
 //     if(number % i === 0) {
@@ -69,4 +67,61 @@ console.log(repeatStr(2, "repeat "));
 //     }
 //   }
 //   return true
-// } 
+// }
+
+function infom(fName, lName, age) {
+  const user = {
+    fName,
+    lName,
+    age,
+    create(profession) {
+      console.log(` he is ${profession} `);
+    },
+  };
+  return user;
+}
+
+const newPerson = infom("engineer", "Thompson", 20);
+
+newPerson.create(newPerson.fName);
+
+function MyBox(fName, height, width) {
+  this.fName,
+    this.height,
+    this.width,
+    (this.create = function (fName) {
+      console.log(`your wife ${fName} `);
+    });
+}
+const ourBox = new MyBox("Unknown", 170, 60);
+console.log(ourBox);
+
+//! when there is in an action  , it is a method
+
+// const entries = Object.entries(user)
+// console.log(entries)
+
+//doing objects
+
+//#4 clone objects
+// clonlash bu copy qilish in js
+
+const user = {
+  fName: "Javohirbek",
+  lName: "Khaydarov",
+  age: 19,
+  create() {
+    console.log("create an object");
+  },
+};
+
+// let user2 = {};
+// for (let key in user) {
+//   user2[key] = user[key];
+// }
+
+
+let user2 = Object.assign({}, user);
+user2.fName = "lie";
+console.log(user2);
+console.log(user);
