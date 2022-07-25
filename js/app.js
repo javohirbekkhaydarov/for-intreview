@@ -181,4 +181,4 @@ function num(n) {
     }
   }
 }
-console.log(num(10));
+
