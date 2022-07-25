@@ -48,111 +48,24 @@ console.log(countSheeps([1]));
 function repeatStr(numberS, stringN) {
   return stringN.repeat(numberS);
 }
+
 console.log(repeatStr(2, "repeat "));
 
-// showPrime(20)
 
-// function showPrime(limit) {
-//   for(let j = 2; j <= limit; j++) {
-//     if(isPrime(j)) {
-//       console.log(j);
-//     }
-//   }
-// }
 
-// function isPrime(number) {
-//   for(let i = 2; i < number; i++) {
-//     if(number % i === 0) {
-//       return false
-//     }
-//   }
-//   return true
-// }
-
-function infom(fName, lName, age) {
-  const user = {
-    fName,
-    lName,
-    age,
-    create(profession) {
-      console.log(` he is ${profession} `);
-    },
-  };
-  return user;
+function showStars(rows) {
+  for(let row = 1; row <= rows; row++) {
+    let pattern = "";
+    for(let i = 0; i < row; i++) pattern += "*";
+    console.log(pattern);
+  }
 }
+showStars(100)
 
-const newPerson = infom("engineer", "Thompson", 20);
-
-newPerson.create(newPerson.fName);
-
-function MyBox(fName, height, width) {
-  this.fName,
-    this.height,
-    this.width,
-    (this.create = function (fName) {
-      console.log(`your wife ${fName} `);
-    });
-}
-const ourBox = new MyBox("Unknown", 170, 60);
-console.log(ourBox);
-
-//! when there is in an action  , it is a method
-
-// const entries = Object.entries(user)
-// console.log(entries)
-
-//doing objects
-
-//#4 clone objects
-// clonlash bu copy qilish in js
 
 const user = {
-  fName: "Javohirbek",
-  lName: "Khaydarov",
-  age: 19,
-  create() {
-    console.log("create an object");
-  },
-};
-
-// let user2 = {};
-// for (let key in user) {
-//   user2[key] = user[key];
-// }
-
-let user2 = Object.assign({}, user);
-user2.fName = "lie";
-console.log(user2);
-console.log(user);
-
-// object spread operators clone
-
-console.log(user2);
-
-// that is spread operators
-let user2 = { ...user };
-
-user2.address = { ...user.address };
-
-//lesson  8
-// task review
-
-const address = {
-  street: "huh",
-  city: "oho",
-  zipcode: 01,
-};
-
-function showAddres(address) {
-  for (let key in address) console.log(`${key} : ${address[key]}`);
+  fName: "lola",
+  age:19
 }
-showAddres(address);
-
-function old35(n) {
-  if (!(n % 15)) return false;
-  if (!(n % 3) || !(n % 5)) return true;
-  return false;
-}
-
-console.log(old35(50));
-
+delete user.age
+console.log(user)
