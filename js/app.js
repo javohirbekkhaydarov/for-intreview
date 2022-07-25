@@ -130,3 +130,8 @@ console.log(user);
 
 
 console.log(user2);
+
+// that is spread operators 
+let user2 = {...user}
+
+user2.address = {...user.address}
