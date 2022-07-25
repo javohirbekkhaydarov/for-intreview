@@ -120,18 +120,39 @@ const user = {
 //   user2[key] = user[key];
 // }
 
-
 let user2 = Object.assign({}, user);
 user2.fName = "lie";
 console.log(user2);
 console.log(user);
 
-// object spread operators clone 
-
+// object spread operators clone
 
 console.log(user2);
 
-// that is spread operators 
-let user2 = {...user}
+// that is spread operators
+let user2 = { ...user };
 
-user2.address = {...user.address}
+user2.address = { ...user.address };
+
+//lesson  8
+// task review
+
+const address = {
+  street: "huh",
+  city: "oho",
+  zipcode: 01,
+};
+
+function showAddres(address) {
+  for (let key in address) console.log(`${key} : ${address[key]}`);
+}
+showAddres(address);
+
+function old35(n) {
+  if (!(n % 15)) return false;
+  if (!(n % 3) || !(n % 5)) return true;
+  return false;
+}
+
+console.log(old35(50));
+
