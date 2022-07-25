@@ -125,3 +125,8 @@ let user2 = Object.assign({}, user);
 user2.fName = "lie";
 console.log(user2);
 console.log(user);
+
+// object spread operators clone 
+
+
+console.log(user2);
