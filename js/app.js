@@ -55,3 +55,19 @@ function sum(n) {
   return sum;
 }
 console.log(sum(5));
+
+
+let numbers = [1,2,3,4,5];
+
+// numbers.forEach(function(number) {
+//   //! high order funcitons
+//   //? funksiya ichida yana bir funksiya parametr bolib number kelishi 2 function return bo`lib yana bir function chaqirishi
+//   console.log(number)
+
+// })
+
+numbers.forEach(number);
+
+function number(number) {
+  console.log(number)
+}
